@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Emmanuel\\Desktop\\C#\\inventoryApi\\inventoryApi.csproj": {}
+    "C:\\Users\\User\\Desktop\\inventoryApi\\inventoryApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Emmanuel\\Desktop\\C#\\inventoryApi\\inventoryApi.csproj": {
+    "C:\\Users\\User\\Desktop\\inventoryApi\\inventoryApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Emmanuel\\Desktop\\C#\\inventoryApi\\inventoryApi.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\inventoryApi\\inventoryApi.csproj",
         "projectName": "inventoryApi",
-        "projectPath": "C:\\Users\\Emmanuel\\Desktop\\C#\\inventoryApi\\inventoryApi.csproj",
-        "packagesPath": "C:\\Users\\Emmanuel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Emmanuel\\Desktop\\C#\\inventoryApi\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\inventoryApi\\inventoryApi.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\inventoryApi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Emmanuel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -47,6 +53,16 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.3, )"
             }
           },
           "imports": [

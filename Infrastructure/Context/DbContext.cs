@@ -1,3 +1,7 @@
+using inventoryApi.Domain;
+using inventoryApi.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+
 namespace inventoryApi.Infrastruture.Context
 {
     public class ApplicationDbContext : DbContext

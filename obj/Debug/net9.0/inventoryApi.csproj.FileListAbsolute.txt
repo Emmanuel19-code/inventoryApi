@@ -1,0 +1,8 @@
+C:\Users\User\Desktop\inventoryApi\obj\Debug\net9.0\inventoryApi.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\inventoryApi\obj\Debug\net9.0\inventoryApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\inventoryApi\obj\Debug\net9.0\inventoryApi.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\inventoryApi\obj\Debug\net9.0\inventoryApi.AssemblyInfo.cs
+C:\Users\User\Desktop\inventoryApi\obj\Debug\net9.0\inventoryApi.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\inventoryApi\obj\Debug\net9.0\inventoryApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\Desktop\inventoryApi\obj\Debug\net9.0\inventoryApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Desktop\inventoryApi\obj\Debug\net9.0\inventoryApi.sourcelink.json

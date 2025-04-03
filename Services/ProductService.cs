@@ -1,3 +1,5 @@
+using inventoryApi.Infrastruture.Context;
+
 namespace inventoryApi.Services
 {
     public class ProductService : IProductService
