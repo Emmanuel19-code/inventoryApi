@@ -1,6 +1,7 @@
+using Microsoft.AspNetCore.Mvc;
 namespace inventoryApi.Controllers
 {
-    [Route("")]
+    [Route("products")]
     [ApiController]
     public class ProductController : ControllerBase
     {

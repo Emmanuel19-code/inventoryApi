@@ -9,5 +9,10 @@ namespace inventoryApi.Services
         {
             _dbContext = dbContext;
         }
+
+        public Task GetProducts()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
