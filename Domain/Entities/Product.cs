@@ -1,6 +1,6 @@
 namespace inventoryApi.Domain
 {
-    public class Products
+    public class Product
     {
         public Guid Id {get;set;}
         public string Name {get;set;}

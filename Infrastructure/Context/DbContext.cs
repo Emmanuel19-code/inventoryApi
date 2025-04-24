@@ -11,7 +11,7 @@ namespace inventoryApi.Infrastruture.Context
 
         }
         public DbSet<Users> Users {get;set;}
-        public DbSet<Products> Products {get;set;}
+        public DbSet<Product> Products {get;set;}
         public DbSet<ExpenseByCategory> ExpenseByCategory {get;set;}
         public DbSet<Sales> Sales {get;set;}
         public DbSet<Expenses> Expenses {get;set;}

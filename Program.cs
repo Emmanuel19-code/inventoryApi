@@ -14,7 +14,7 @@ builder.Services.AddScoped<IExpenseService,ExpenseService>();
 builder.Services.AddControllers();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("Database")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("UserDatabase")));
 
 
 var app = builder.Build();
