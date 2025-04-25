@@ -1,6 +1,7 @@
 using inventoryApi.Domain;
 using inventoryApi.Domain.Contracts;
 using inventoryApi.Infrastruture.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace inventoryApi.Services
 {
@@ -35,17 +36,31 @@ namespace inventoryApi.Services
             return Response<Product>.OK(newProduct, "Product Added");
         }
 
-        public Task<Response<List<Product>>> SearchProduct(string productName)
+        public async Task<Response<List<Product>>> SearchProduct(string productName)
         {
-            throw new NotImplementedException();
-        }
-        public Task GetProducts()
-        {
-            throw new NotImplementedException();
+            IQueryable<Product> query = _dbContext.Products;
+
+            if (!string.IsNullOrWhiteSpace(productName))
+            {
+                query = query.Where(p => EF.Functions.Like(p.Name, $"%{productName}%"));
+            }
+
+            var products = await query.ToListAsync();
+
+            if(products == null)
+            {
+                return Response<List<Product>>.Fail("Not Product Found");
+            }
+
+            return Response<List<Product>>.OK(products);
         }
 
-       
 
-        
+        public async Task<Response<List<Product>>> GetProducts()
+        {
+            var products = await _dbContext.Products.ToListAsync();
+            return Response<List<Product>>.OK(products);
+            ;
+        }
     }
 }
