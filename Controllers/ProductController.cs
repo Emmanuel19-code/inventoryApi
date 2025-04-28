@@ -4,7 +4,7 @@ using inventoryApi.Services;
 using Microsoft.AspNetCore.Mvc;
 namespace inventoryApi.Controllers
 {
-    [Route("inventory")]
+    [Route("/inventory")]
     [ApiController]
     public class ProductController : ControllerBase
     {
@@ -21,12 +21,20 @@ namespace inventoryApi.Controllers
             return response;
         }
 
-        [HttpGet("/searchProduct")]
+        [HttpGet("searchProduct")]
         public async Task<ActionResult<Response<List<Product>>>> Search( [FromQuery] string search)
         {
             Console.WriteLine("this is called");
             var response = await _productService.SearchProduct(search);
             return response;
+        }
+
+        [HttpPost("addProduct")]
+        public async Task<Response<Product>> NewProduct(CreateProduct request)
+        {
+           Console.WriteLine( "hello");
+           var response = await _productService.AddProduct(request);
+           return response;
         }
 
     }
