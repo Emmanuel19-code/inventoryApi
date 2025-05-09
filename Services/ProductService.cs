@@ -15,6 +15,7 @@ namespace inventoryApi.Services
 
         public async Task<Response<Product>> AddProduct(CreateProduct request)
         {
+            Console.WriteLine(request.Name);
             if (string.IsNullOrEmpty(request.Name))
             {
                 return Response<Product>.Fail("Product is required");
@@ -60,7 +61,7 @@ namespace inventoryApi.Services
         {
             var products = await _dbContext.Products.ToListAsync();
             return Response<List<Product>>.OK(products);
-            ;
+            
         }
     }
 }

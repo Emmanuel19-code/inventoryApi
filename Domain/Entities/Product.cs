@@ -7,5 +7,6 @@ namespace inventoryApi.Domain
         public double Price {get;set;}
         public Decimal Rating {get;set;}
         public int StockQuantity {get;set;}
+        public int TotalSold {get;set;} = 0;
     }
 }
